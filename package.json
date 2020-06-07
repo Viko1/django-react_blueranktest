@@ -1,0 +1,45 @@
+{
+  "name": "bluerank_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./backend/frontend/src/index.js --output ./backend/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./backend/frontend/src/index.js --output ./backend/frontend/static/frontend/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "feedparser": "^2.2.10",
+    "formik": "^2.1.4",
+    "jquery": "^3.5.1",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "node-fetch": "^2.6.0",
+    "node-gyp": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "querystring": "^0.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-native-rss-parser": "^1.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-xml-parser": "^1.1.6",
+    "rebuild": "^0.1.2",
+    "rss-parser": "^3.8.0",
+    "xml2js": "^0.4.23",
+    "yup": "^0.29.1"
+  }
+}
