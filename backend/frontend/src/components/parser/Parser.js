@@ -3,11 +3,10 @@ import React, {Component} from 'react';
 class Parser extends Component {
 
     render() {
-
-
-        let url = 'https://feed.hitspot.media/rajapack.xml';
-        load_rss_to_table(url);
-
+        document.getElementById('load_url').addEventListener('click', function (e) {
+            let url = document.getElementById('remote_url').value;
+            load_rss_to_table(url);
+        });
 
         function load_rss_to_table(theUrl) {
             if (!theUrl) {
