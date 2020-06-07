@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import ReactDom from 'react-dom'
 import Header from "./layout/Header";
+import Parser from "./parser/Parser";
 
 
 
@@ -9,6 +10,7 @@ class App extends Component {
         return (
             <Fragment>
                 <Header/>
+                <Parser/>
             </Fragment>
 
         )

@@ -82,33 +82,38 @@ class Parser extends Component {
 
         return (
             <div>
+                <div id="root"/>
                 <main>
-                    <div style={{width: '400px', padding: '10px'}}>
-                        <form name="rss_read">
-                            <input id="remote_url" type="text" name="remote_url" defaultValue required="required"/>
-                            <button id="load_url" type="button" name="button" >Read</button>
+                    <h1 style={{color: 'white', textAlign: 'center', marginTop: '200px'}}>RSS parser put your url right
+                        below</h1>
+                    <div style={{textAlign: 'center', padding: '10px', marginTop: '50px'}}>
+                        <form name="rss_read" type="url" required>
+                            <input title="The URL must contain xml" id="remote_url" name="remote_url"
+                                   placeholder="https://feed/example.xml" type="url" required/>
+                            <button id="load_url" type="button" name="button">Read</button>
                         </form>
                     </div>
                     <br/>
-                    <div style={{width: '600px', padding: '10px'}}>
+                    <div style={{marginLeft: '200px', padding: '10px', textAlign: 'center', marginRight: '200px'}}>
                         <table id="rss_table"
-                               className=""
-                               style={{}}>
-                            <thead>
+                               className="table table-striped table-bordered table-hover table-sm no-footer"
+                               style={{display: 'none'}}>
+                            <thead style={{backgroundColor: 'bisque'}}>
                             <tr>
-                                <th>g:id</th>
-                                <th>g:price</th>
-                                <th>g:availability</th>
+                                <th>id</th>
+                                <th>Price</th>
+                                <th>Availability</th>
                                 <th>title</th>
-                                <th>g:custom_label_0</th>
-                                <th>g:custom_label_1</th>
-                                <th>g:custom_label_2</th>
-                                <th>g:custom_label_3</th>
+                                <th>Custom_label_0</th>
+                                <th>Custom_label_1</th>
+                                <th>Custom_label_2</th>
+                                <th>Custom_label_3</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody style={{backgroundColor: 'beige'}}>
                             <tr>
-                                <td colSpan="100%">No data</td>
+                                <td colSpan="100%">Url is needed/ or data in no rss-&gt;channel-&gt;item(s) structure
+                                </td>
                             </tr>
                             </tbody>
                         </table>
