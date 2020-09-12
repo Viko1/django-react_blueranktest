@@ -27,7 +27,7 @@
     "jquery": "^3.5.1",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-gyp": "^7.0.0",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
