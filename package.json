@@ -20,7 +20,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.0",
     "feedparser": "^2.2.10",
     "formik": "^2.1.4",
